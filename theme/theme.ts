@@ -224,7 +224,8 @@ const theme: Theme = {
       fontWeight: 'bold',
       transition: 'background-color 0.125s ease-in-out',
       ':hover': {
-        bg: 'primaryHover'
+        bg: 'primaryHover',
+        cursor: 'pointer'
       }
     },
     secondary: {
@@ -237,18 +238,8 @@ const theme: Theme = {
     icon: {
       borderRadius: 'full',
       ':hover': {
-        bg: 'muted'
-      }
-    },
-    emoji: {
-      variant: 'buttons.primary',
-      bg: 'muted',
-      width: '2.5rem',
-      height: '2.5rem',
-      p: 0,
-      lineHeight: '0',
-      ':hover': {
-        bg: 'mutedHover'
+        bg: 'muted',
+        cursor: 'pointer'
       }
     }
   },

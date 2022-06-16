@@ -24,17 +24,17 @@ const HeroCard = () => {
         // }}
       > */}
         <Heading sx={{ fontSize: [5,6], mb: 2 }}>
-          Hi, I'm&nbsp;
+          {`Hi, I'm `}
           <span sx={{ color: 'primary' }}>
             Alex
           </span>
-          .&nbsp;
+          {' '}
           <span sx={{ display: 'inline-block', animation: `${wave} 3s linear infinite` }}>
             👋
           </span>
         </Heading>
         <Text as="p">
-          I'm a front end developer currently based in Brooklyn, NY. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {`I'm a front end developer currently based in Brooklyn, NY. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
         </Text>
       {/* </Card> */}
     </Box>

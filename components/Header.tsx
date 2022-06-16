@@ -50,7 +50,7 @@ const Header = () => {
         <Flex sx={{ alignItems: 'center' }}>
           <nav>
             {navLinks.map(navLink => (
-              <Link href={navLink.path}>
+              <Link key={navLink.path} href={navLink.path}>
                 <NavLinky
                   sx={{ color: pathname === navLink.path ? 'primary' : 'inherit' }}
                 >
