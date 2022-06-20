@@ -1,15 +1,9 @@
 import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
-import { Heading, Grid, Card, Image, Text, Badge } from 'theme-ui';
-import CardBody from '../components/CardBody';
-
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  technologies: string[];
-  image: string;
-}
+import { Container } from 'theme-ui';
+import PageHeading from '../components/PageHeading';
+import ProjectsGrid from '../components/ProjectsGrid';
+import type Project from '../types/Project';
 
 interface Props {
   projects: Project[]
@@ -23,23 +17,10 @@ const Projects: NextPage<Props> = ({ projects }) => {
         <meta name="description" content="projects" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Heading mb={4} sx={{ fontSize: 4 }}>💾 Projects</Heading>
-        <Grid gap={3} columns={[1, 2]}>
-          {projects.map(project => (
-            <Card key={project.id} variant="outline">
-              <Image variant="cardTop" src={project.image} alt={project.title} />
-              <CardBody>
-                <Heading mb={2} sx={{ fontSize: 3 }}>{project.title}</Heading>
-                <Text as="p" mb={2}>{project.description}</Text>
-                {project.technologies.map(technology => (
-                  <Badge key={technology} mr={1}>{technology}</Badge>
-                ))}
-              </CardBody>
-            </Card>
-          ))}
-        </Grid>
-      </main>
+      <Container py={4}>
+        <PageHeading>💾 Projects</PageHeading>
+        <ProjectsGrid projects={projects} />
+      </Container>
    </>
   );
 };
@@ -64,7 +45,7 @@ export const getStaticProps: GetStaticProps = async () => {
       id: 3,
       title: 'Portfolio',
       description: 'My portfolio site to showcase my work (this site right here).',
-      technologies: ['React', 'TypeScript', 'Theme-UI'],
+      technologies: ['React', 'Next.JS', 'TypeScript', 'Theme-UI', 'Netlify'],
       image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png'
     },
     {

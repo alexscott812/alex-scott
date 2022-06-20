@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { Container } from 'theme-ui';
 import HeroCard from '../components/Hero';
 
 const Home: NextPage = () => {
@@ -10,9 +11,9 @@ const Home: NextPage = () => {
         <meta name="description" content="home" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <Container py={4}>
         <HeroCard />
-      </main>
+      </Container>
     </>
   );
 };
