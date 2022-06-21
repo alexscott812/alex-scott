@@ -71,6 +71,6 @@ const Header = () => {
       </Container>
     </Box>
   );
-}
+};
 
 export default Header;

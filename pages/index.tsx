@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <meta name="description" content="home" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container py={4}>
+      <Container py={4} sx={{ display: 'flex', minHeight: '100vh' }}>
         <HeroCard />
       </Container>
     </>

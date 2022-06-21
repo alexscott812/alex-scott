@@ -7,6 +7,6 @@ const PageHeading = ({ children }: { children: ReactNode }) => {
       {children}
     </Heading>
   );
-}
+};
 
 export default PageHeading;

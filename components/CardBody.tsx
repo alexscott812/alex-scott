@@ -9,6 +9,6 @@ const CardBody = ({ children }: CardBodyProps) => {
   return (
     <Box p={3}>{children}</Box>
   );
-}
+};
 
 export default CardBody;
