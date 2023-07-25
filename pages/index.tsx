@@ -17,7 +17,13 @@ const Home: NextPage = () => {
         <PageIcon>
           <span className="inline-block animate-wave">👋</span>
         </PageIcon>
-        <PageHeading>Hi, I&apos;m Alex.</PageHeading>
+        <PageHeading>
+          Hi, I&apos;m&nbsp;
+          <span className="underline underline-offset-4 decoration-violet-600">
+            Alex
+          </span>
+          .
+        </PageHeading>
         <p className="pb-4">
           I&apos;m a full stack developer currently based in Brooklyn, NY. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>

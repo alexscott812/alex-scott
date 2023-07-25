@@ -36,15 +36,15 @@ const Header = () => {
   return (
     <div className="fixed z-10 w-full bg-white">
       <div className="px-4 container mx-auto flex h-14 max-w-2xl items-center justify-between">
-        <Link href="/">
+        <Link href="/" >
           <a className="text-2xl font-semibold">Alex Scott</a>
         </Link>
         <div>
           <Link href="/projects">
-            <a className="px-2">Projects</a>
+            <a className={`font-semibold px-2 ${pathname === '/projects' && 'underline underline-offset-4 decoration-violet-600'}`}>Projects</a>
           </Link>
           <Link href="/contact">
-            <a className="px-2">Contact</a>
+            <a className={`font-semibold px-2 ${pathname === '/contact' && 'underline underline-offset-4 decoration-violet-600'}`}>Contact</a>
           </Link>
         </div>
       </div>
