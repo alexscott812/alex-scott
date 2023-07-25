@@ -25,7 +25,7 @@ const navLinks: NavLink[] = [
 
 const colorModes: string[] = ['light', 'dark', 'natural'];
 
-const Header = () => {
+const Footer = () => {
   const { pathname } = useRouter();
   // const [colorMode, setColorMode] = useColorMode();
 
@@ -34,22 +34,11 @@ const Header = () => {
   // };
 
   return (
-    <div className="fixed z-10 w-full bg-white">
-      <div className="px-4 container mx-auto flex h-14 max-w-2xl items-center justify-between">
-        <Link href="/">
-          <a className="text-2xl font-semibold">Alex Scott</a>
-        </Link>
-        <div>
-          <Link href="/projects">
-            <a className="px-2">Projects</a>
-          </Link>
-          <Link href="/contact">
-            <a className="px-2">Contact</a>
-          </Link>
-        </div>
-      </div>
+    <div className="p-4 container mx-auto max-w-2xl py-14">
+      <div className="border-t-2 border-stone-100 mb-4" />
+      <h1 className="text-stone-500 text-sm">&copy; Alex Scott, 2023</h1>
     </div>
   );
 };
 
-export default Header;
+export default Footer;
