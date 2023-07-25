@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <div className="p-4 container mx-auto max-w-2xl py-14">
       <div className="border-t-2 border-stone-100 mb-4" />
-      <h1 className="text-stone-500 text-sm">&copy; Alex Scott, 2023</h1>
+      <h1 className="text-stone-500 text-sm">&copy; 2023 Alex Scott</h1>
     </div>
   );
 };
