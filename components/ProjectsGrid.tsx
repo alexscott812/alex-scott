@@ -1,23 +1,25 @@
-import { Card, Grid, Heading, Image, Text, Badge } from "theme-ui";
-import CardBody from "./CardBody";
 import type Project from '../types/Project';
 
 const ProjectsGrid = ({ projects = [] }: { projects: Project[] }) => {
   return (
-    <Grid gap={3} columns={[1, 2]}>
+    <div className="grid gap-4 md:grid-cols-2">
       {projects.map(project => (
-        <Card key={project.id} variant="outline">
-          <Image variant="cardTop" src={project.image} alt={project.title} />
-          <CardBody>
-            <Heading mb={2} sx={{ fontSize: 3 }}>{project.title}</Heading>
-            <Text as="p" mb={2}>{project.description}</Text>
-            {project.technologies.map(technology => (
-              <Badge key={technology} mr={1}>{technology}</Badge>
-            ))}
-          </CardBody>
-        </Card>
+        <div key={project.id} className="overflow-hidden rounded-xl border-2 border-stone-100">
+          <img className="h-48 min-w-full object-cover" src={project.image} alt={project.title} />
+          <div className="p-4">
+            <h3 className="pb-2 text-xl font-semibold">{project.title}</h3>
+            <p className="pb-2">{project.description}</p>
+            <div className="flex flex-wrap gap-2">
+              {project.technologies.map(technology => (
+                <span key={technology} className="inline-block rounded bg-violet-100 px-2 py-1 text-xs font-semibold uppercase text-violet-600">
+                  {technology}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
       ))}
-    </Grid>
+    </div>
   );
 };
 

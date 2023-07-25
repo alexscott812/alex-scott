@@ -1,9 +1,10 @@
 import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
-import { Container } from 'theme-ui';
+import PageContainer from '../components/PageContainer';
 import PageHeading from '../components/PageHeading';
 import ProjectsGrid from '../components/ProjectsGrid';
 import type Project from '../types/Project';
+import PageIcon from '../components/PageIcon';
 
 interface Props {
   projects: Project[]
@@ -17,10 +18,11 @@ const Projects: NextPage<Props> = ({ projects }) => {
         <meta name="description" content="projects" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container py={4}>
-        <PageHeading>💾 Projects</PageHeading>
+      <PageContainer>
+        <PageIcon>💾</PageIcon>
+        <PageHeading>Projects</PageHeading>
         <ProjectsGrid projects={projects} />
-      </Container>
+      </PageContainer>
    </>
   );
 };
@@ -29,7 +31,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'HeadyNet',
+      title: 'shakedown',
       description: 'A full stack web app to explore all Grateful Dead shows, songs, and venues ever played. Register to rate and review your favorite shows.',
       technologies: ['React', 'NodeJS', 'Express', 'MongoDB', 'Chakra-UI'],
       image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png'

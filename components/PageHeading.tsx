@@ -1,11 +1,10 @@
 import { ReactNode } from 'react';
-import { Heading } from 'theme-ui';
 
 const PageHeading = ({ children }: { children: ReactNode }) => {
   return (
-    <Heading mb={4} sx={{ fontSize: 4 }}>
+    <h1 className="pb-4 text-3xl font-bold">
       {children}
-    </Heading>
+    </h1>
   );
 };
 
