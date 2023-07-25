@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         </PageIcon>
         <PageHeading>Hi, I'm Alex.</PageHeading>
         <p className="pb-4">
-          {"I'm a full stack developer currently based in Brooklyn, NY. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+          I&apos;m a full stack developer currently based in Brooklyn, NY. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
         <Link href="/projects">
           <button className="rounded-lg bg-gradient-to-r from-violet-600 to-indigo-600 px-4 py-2 font-semibold text-white transition-colors hover:from-violet-700 hover:to-indigo-700 mr-2">
