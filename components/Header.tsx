@@ -37,14 +37,17 @@ const Header = () => {
     <div className="fixed z-10 w-full bg-white">
       <div className="px-4 container mx-auto flex h-14 max-w-2xl items-center justify-between">
         <Link href="/" >
-          <a className="text-2xl font-semibold">Alex Scott</a>
+          <a className="text-2xl font-semibold">{'<AS />'}</a>
         </Link>
         <div>
           <Link href="/projects">
-            <a className={`font-semibold px-2 ${pathname === '/projects' && 'underline underline-offset-4 decoration-violet-600'}`}>Projects</a>
+            <a className={`font-semibold px-2 ${pathname === '/projects' && 'underline underline-offset-4 decoration-violet-600 decoration-4'}`}>Projects</a>
+          </Link>
+          <Link href="/about">
+            <a className={`font-semibold px-2 ${pathname === '/about' && 'underline underline-offset-4 decoration-violet-600 decoration-4'}`}>About</a>
           </Link>
           <Link href="/contact">
-            <a className={`font-semibold px-2 ${pathname === '/contact' && 'underline underline-offset-4 decoration-violet-600'}`}>Contact</a>
+            <a className={`font-semibold px-2 ${pathname === '/contact' && 'underline underline-offset-4 decoration-violet-600 decoration-4'}`}>Contact</a>
           </Link>
         </div>
       </div>

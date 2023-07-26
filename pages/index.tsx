@@ -19,8 +19,8 @@ const Home: NextPage = () => {
         </PageIcon>
         <PageHeading>
           Hi, I&apos;m&nbsp;
-          <span className="underline underline-offset-4 decoration-violet-600">
-            Alex
+          <span className="underline underline-offset-4 decoration-violet-600 decoration-4">
+            Alex Scott
           </span>
           .
         </PageHeading>
