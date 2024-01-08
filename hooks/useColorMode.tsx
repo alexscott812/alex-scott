@@ -3,7 +3,7 @@ import { useState } from "react";
 type ColorMode = 'light' | 'dark';
 
 const useColorMode = () => {
-  const [colorMode, setColorMode] = useState<ColorMode>();
+  const [colorMode, setColorMode] = useState<ColorMode>('light');
 
   const toggleColorMode = () => {
     if (colorMode === 'light') {
