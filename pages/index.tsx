@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           </span>
           .
         </PageHeading>
-        <p className="pb-4">
+        <p className="pb-4 dark:text-gray-400">
           I&apos;m a full stack developer currently based in Brooklyn, NY. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
         <Link href="/projects">
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
           </button>
         </Link>
         <Link href="/contact">
-          <button className="rounded-lg bg-stone-100 px-4 py-2 font-semibold text-black transition hover:bg-stone-200">
+          <button className="rounded-lg bg-gray-100 dark:bg-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-800 px-4 py-2 font-semibold text-black transition">
             Contact
           </button>
         </Link>

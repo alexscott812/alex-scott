@@ -29,12 +29,14 @@ const Header = () => {
   const { pathname } = useRouter();
   // const [colorMode, setColorMode] = useColorMode();
 
-  // const handleToggleColorMode: React.MouseEventHandler<HTMLButtonElement> = () => {
-  //   setColorMode(colorModes[(colorModes.indexOf(colorMode) + 1) % colorModes.length])
-  // };
+  const handleToggleColorMode: React.MouseEventHandler<HTMLButtonElement> = () => {
+    console.log('toggling color mode');
+    // document.documentElement.classList.add('dark');
+    // setColorMode(colorModes[(colorModes.indexOf(colorMode) + 1) % colorModes.length])
+  };
 
   return (
-    <div className="fixed z-10 w-full bg-white">
+    <div className="fixed z-10 w-full bg-white dark:bg-gray-950 dark:text-gray-50">
       <div className="px-4 container mx-auto flex h-14 max-w-2xl items-center justify-between">
         <Link href="/" >
           <a className="text-2xl font-semibold">{'<AS />'}</a>
@@ -49,6 +51,7 @@ const Header = () => {
           <Link href="/contact">
             <a className={`font-semibold px-2 ${pathname === '/contact' && 'underline underline-offset-4 decoration-violet-600 decoration-4'}`}>Contact</a>
           </Link>
+          <button onClick={handleToggleColorMode}>a</button>
         </div>
       </div>
     </div>
