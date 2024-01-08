@@ -5,7 +5,8 @@ const ProjectsGrid = ({ projects = [] }: { projects: Project[] }) => {
     <div className="grid gap-4 md:grid-cols-2">
       {projects.map(project => (
         <div key={project.id} className="overflow-hidden rounded-xl border-2 border-gray-100 dark:border-gray-800">
-          <img className="h-48 min-w-full object-cover" src={project.image} alt={project.title} />
+          {/* <img className="h-48 min-w-full object-cover" src={project.image} alt={project.title} /> */}
+          <div className="h-48 min-w-full object-cover bg-gray-100 dark:bg-gray-800" />
           <div className="p-4">
             <h3 className="pb-2 text-xl font-semibold dark:text-gray-100">{project.title}</h3>
             <p className="pb-4 dark:text-gray-400">{project.description}</p>
