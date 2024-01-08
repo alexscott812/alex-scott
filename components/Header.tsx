@@ -43,7 +43,7 @@ const Header = () => {
         </Link>
         <div>
           {navLinks.map(link => (
-            <Link href={link.path}>
+            <Link href={link.path} key={link.name}>
               <a className={`font-semibold px-2 ${pathname === link.path && 'underline underline-offset-4 decoration-violet-600 decoration-4'}`}>
                 {link.name}
               </a>
