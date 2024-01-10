@@ -15,7 +15,7 @@ const About: NextPage = () => {
       <PageContainer>
         <PageIcon>👤</PageIcon>
         <PageHeading>About</PageHeading>
-        <ul className="space-y-2 dark:text-gray-400">
+        <ul className="space-y-2 dark:text-gray-200">
           <li>👤 I&apos;m Alex Scott</li>
           <li>📍 Currently living in Brooklyn, NY</li>
           <li>👨‍💻 Working at&nbsp;
