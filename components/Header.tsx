@@ -51,12 +51,13 @@ const Header = () => {
           ))} */}
           {navLinks.map(link => (
             <Link href={link.path} key={link.name}>
-              <a className={`ml-1 px-2 py-2 font-semibold rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 ${pathname === link.path && 'text-violet-600 dark:text-violet-500'}`}>
+              {/* <a className={`ml-1 px-2 py-2 font-semibold rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 ${pathname === link.path && 'text-violet-600 dark:text-violet-500'}`}> */}
+              <a className={`ml-1 px-2 py-2 font-semibold rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900`}>
                 {link.name}
               </a>
             </Link>
           ))}
-          <button className='ml-1 px-2 py-1 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900' onClick={handleToggleColorMode}>
+          <button className='ml-1 px-2 py-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900' onClick={handleToggleColorMode}>
             {colorMode === 'dark' ? '🌙' : '☀️'}
           </button>
         </div>
