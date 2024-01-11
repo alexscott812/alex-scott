@@ -47,7 +47,7 @@ export const getStaticProps: GetStaticProps = async () => {
       id: 3,
       title: 'Portfolio',
       description: 'My portfolio site to showcase my work (this site right here).',
-      technologies: ['React', 'Next.JS', 'TypeScript', 'Theme-UI', 'Netlify'],
+      technologies: ['React', 'Next.JS', 'TypeScript', 'Tailwind', 'Netlify'],
       image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png'
     },
     {
