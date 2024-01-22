@@ -37,4 +37,6 @@ const Button = forwardRef<HTMLAnchorElement, ButtonProps>(({
   );
 });
 
+Button.displayName = 'Button';
+
 export default Button;
