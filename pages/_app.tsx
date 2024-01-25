@@ -6,7 +6,7 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950">
+    <div className="min-h-screen bg-white dark:bg-gray-950 lowercase">
       <Header />
       <MainContainer>
         <Component {...pageProps} />

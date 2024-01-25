@@ -4,6 +4,8 @@ interface Project {
   description: string;
   technologies: string[];
   image: string;
+  prod_link: string;
+  source_link: string;
 }
 
 export default Project;

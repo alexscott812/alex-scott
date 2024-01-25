@@ -34,29 +34,37 @@ export const getStaticProps: GetStaticProps = async () => {
       title: 'shakedown',
       description: 'A full stack web app to explore all Grateful Dead shows, songs, and venues ever played. Register to rate and review your favorite shows.',
       technologies: ['React', 'NodeJS', 'Express', 'MongoDB', 'Chakra-UI'],
-      image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png'
+      image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png',
+      prod_link: 'https://shakedown.onrender.com/',
+      source_link: 'https://github.com/alexscott812/shakedown'
     },
     {
       id: 2,
       title: 'notes-js',
       description: 'A note taking web app that persists data to local storage and syncs across browser tabs and windows.',
       technologies: ['React', 'TypeScript', 'Chakra-UI', 'Netlify'],
-      image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png'
+      image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png',
+      prod_link: 'https://notes-js-123.netlify.app/',
+      source_link: 'https://github.com/alexscott812/notes-js'
     },
     {
       id: 3,
-      title: 'Portfolio',
+      title: 'my portfolio',
       description: 'My portfolio site to showcase my work (this site right here).',
       technologies: ['React', 'Next.JS', 'TypeScript', 'Tailwind', 'Netlify'],
-      image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png'
+      image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png',
+      prod_link: 'https://alex-scott.netlify.app/',
+      source_link: 'https://github.com/alexscott812/alex-scott'
     },
-    {
-      id: 4,
-      title: 'Project 4',
-      description: 'A description about project 4.',
-      technologies: ['React', 'Node', 'SQL'],
-      image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png'
-    },
+    // {
+    //   id: 4,
+    //   title: 'Project 4',
+    //   description: 'A description about project 4.',
+    //   technologies: ['React', 'Node', 'SQL'],
+    //   image: 'https://archwaycicero.greatheartsamerica.org/wp-content/uploads/sites/24/2016/11/default-placeholder.png',
+    //   prod_link: 'https://shakedown.onrender.com/',
+    //   source_link: 'https://github.com/alexscott812/shakedown'
+    // }
   ];
 
   return {

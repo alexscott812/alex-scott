@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 const PageIcon = ({ children }: { children: ReactNode }) => {
   return (
-    <h1 className="pb-8 text-6xl">
+    <h1 className="pb-4 text-6xl">
       {children}
     </h1>
   );
